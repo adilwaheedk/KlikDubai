@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius"
+    card_view:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:id="@+id/item_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="item picture"
+                android:paddingTop="10dp"
+                android:src="@drawable/img_na"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/item_out_of_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_leaf_accent"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:text="OUT OF STOCK"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/item_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_leaf_green"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:text="5% OFF"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Apple iPhone 6s"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="$500.00"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/item_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/strikethrough"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="$550.00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/item_rate"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/item_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="KlikDubai.com"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="visible"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/item_add_cart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/selector_icon_cart"/>
+
+            <ImageView
+                android:id="@+id/item_fav"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/selector_icon_fav"/>
+
+            <ImageView
+                android:id="@+id/item_compare"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_compare_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/item_view"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/ic_visibility_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

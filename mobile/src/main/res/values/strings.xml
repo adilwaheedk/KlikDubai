@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">KlikDubai</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">Search Item</string>
+    <string name="select_email_app">Select Email App</string>
+    <string name="signin">Sign In</string>
+    <string name="email_addr">Email Address</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="already_account">Already have account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="addr_line1">Address Line 1</string>
+    <string name="addr_line2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="zip">ZIP</string>
+    <string name="register">REGISTER</string>
+    <string name="display_name">Display Name</string>
+    <string name="company">Company</string>
+    <string name="name">Name</string>
+    <string name="be_a_seller">Be A Seller</string>
+    <string name="directory_name">KlikDubai</string>
+    <string name="directory_log">Log</string>
+    <string name="log_filename">bugs.txt</string>
+    <string name="home_tag">home_fragment</string>
+    <string name="account_tag">account_fragment</string>
+    <string name="cart">Cart</string>
+    <string name="exit_app_message">Press again to exit</string>
+    <string name="please_wait">Please wait a moment…</string>
+    <string name="reg_customer_tag">reg_customer_fragment</string>
+    <string name="reg_vendor_tag">reg_vendor_fragment</string>
+    <string name="compare_items_tag">compare_items_fragment</string>
+    <string name="contact_us_tag">contact_us_fragment</string>
+    <string name="cart_tag">cart_fragment</string>
+    <string name="all_cat_tag">all_cat_fragment</string>
+    <string name="return_policy_tag">return_policy_fragment</string>
+    <string name="file_return_policy">return_policy.txt</string>
+    <string name="url_api">http://uaepromotions.com/index.php/Rest_API/</string>
+    <string name="url_api_get_rows">http://uaepromotions.com/index.php/Rest_API/get/rows/</string>
+    <string name="url_product_img">http://www.uaepromotions.com/uploads/product_image/product_</string>
+    <string name="error">Something bad happened</string>
+    <string name="api_error">Server connection failed, please try again</string>
+    <string name="bad_request">Bad Request</string>
+</resources>

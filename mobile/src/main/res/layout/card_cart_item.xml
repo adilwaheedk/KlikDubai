@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius"
+    card_view:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:contentDescription="item picture"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_xl_5754385_6004719"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="Apple iPhone 6s"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+
+                <ImageView
+                    android:id="@+id/btn_remove"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_btn_red"
+                    android:src="@drawable/ic_clear_black_18dp"
+                    android:tint="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$2.00"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="x"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$500.00"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/item_tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="$100.00"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/item_ship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="$20.00"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+
+                <TextView
+                    android:id="@+id/item_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="$1120.00"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:lines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
